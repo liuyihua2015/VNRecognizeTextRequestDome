@@ -1,6 +1,18 @@
-# 原来仓库地址 ： 这里只是对其中的文字识别功能进行的拓展和展示
+## iOS13 苹果自带的文字识别功能
 
-#  https://github.com/bigsen/Vision_Demo
+###  原来仓库地址 ： https://github.com/bigsen/Vision_Demo
+
+本地项目只是在此项目上进行文字识别功能的一些拓展
+
+
+
+![IMG_5438](IMG_5438.PNG)
+
+
+
+![IMG_5437](IMG_5437.PNG)
+
+#### 原文介绍：
 
 北京时间2017.6.6日凌晨1点，新一届的WWDC召开，苹果在大会上发布了iOS11的beta版，伴随着iOS 11的发布，也随之推出了一些新的API，如：ARKit 、Core ML、FileProvider、IdentityLookup 、Core NFC、Vison 等。
 
