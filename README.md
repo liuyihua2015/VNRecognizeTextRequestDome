@@ -1,3 +1,7 @@
+# 原来仓库地址 ： 这里只是对其中的文字识别功能进行的拓展和展示
+
+#  https://github.com/bigsen/Vision_Demo
+
 北京时间2017.6.6日凌晨1点，新一届的WWDC召开，苹果在大会上发布了iOS11的beta版，伴随着iOS 11的发布，也随之推出了一些新的API，如：ARKit 、Core ML、FileProvider、IdentityLookup 、Core NFC、Vison 等。
 
 本篇文章主要简单介绍下其中的 Vision API 的使用（Vision更强大的地方是可以结合Core ML模型实现更强大的功能，本篇文章就不详细展开了）
