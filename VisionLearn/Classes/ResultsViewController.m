@@ -12,6 +12,7 @@
 #import "CameraCaptureController.h"
 
 @interface ResultsViewController ()
+@property (nonatomic, strong) UITextView *  textView;
 
 @end
 
@@ -19,8 +20,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.tableFooterView = [UIView new];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
+//    self.tableView.tableFooterView = [UIView new];
+//    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
+    
+    NSString * content = [self.dataArray componentsJoinedByString:@"\n"];
+    
+    UITextView *  textView = [[UITextView alloc]initWithFrame:self.view.bounds];
+    textView.font = [UIFont systemFontOfSize:15];
+    textView.text = content;
+    
+    self.textView = textView;
+    
+    [self.view addSubview:textView];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -37,7 +48,10 @@
 -(void)setDataArray:(NSArray *)dataArray {
     
     _dataArray = dataArray;
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
+    NSString * content = [self.dataArray componentsJoinedByString:@"\n"];
+    self.textView.text = content;
+    
 }
 
 @end

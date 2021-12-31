@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "VisionViewController.h"
+#import "DSFaceViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -21,7 +23,10 @@
 
 - (IBAction)enterDemo{
     
-    VisionViewController *vc = [[VisionViewController alloc]init];
+//    VisionViewController *vc = [[VisionViewController alloc]init];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    DSFaceViewController *vc = [[DSFaceViewController alloc]initWithDetectionType:DSDetectionTypeTextRectangles];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

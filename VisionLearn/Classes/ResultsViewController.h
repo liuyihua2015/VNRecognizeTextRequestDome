@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ResultsViewController : UITableViewController
+@interface ResultsViewController : UIViewController
 @property (nonatomic, strong)NSArray *dataArray;
 @end
 
